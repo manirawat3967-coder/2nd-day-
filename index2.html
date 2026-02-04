@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Another Day, Another Surprise 💖</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      background: #ffe6f0;
+      padding: 20px;
+    }
+    .sticker {
+      max-width: 250px;
+      margin-top: 20px;
+    }
+    h1 {
+      color: #d63384;
+      margin: 20px 0;
+    }
+    .question {
+      font-size: 20px;
+      margin: 20px 0;
+      color: #555;
+    }
+    .options button {
+      background-color: #ff66b3;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .options button:hover {
+      background-color: #ff3385;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticker -->
+  <img src="sticker.png" alt="Surprise Sticker" class="sticker">
+
+  <!-- Greeting & Question -->
+  <h1>Another day, another surprise for you!</h1>
+  <p class="question">Mr., wanna see? <br>So answer a question: What am I craving right now?</p>
+
+  <!-- Options -->
+  <div class="options">
+    <!-- Momo = No → wrong.html -->
+    <button onclick="window.location.href='wrong.html'">Momo</button>
+
+    <!-- Non-Veg = Yes → future index.html -->
+  <button onclick="openPropose()">Non-Veg</button>
+
+<script>
+function openPropose() {
+    window.location.href = "propose.html"; // ya jahan propose page saved hai
+}
+</script>
+
+
+</body>
+</html>
